@@ -17,6 +17,7 @@ import 'package:gaadibazaar/dashboard/car_section/cars_filter.dart';
 import 'package:gaadibazaar/dashboard/constructions_section/construction_filter.dart';
 import 'package:gaadibazaar/dashboard/constructions_section/construction_section.dart';
 import 'package:gaadibazaar/dashboard/main_dashboard/dashboard.dart';
+import 'package:gaadibazaar/filter/filter.dart';
 import 'package:gaadibazaar/listing/listing_bike/listing_bike.dart';
 import 'package:gaadibazaar/listing/listing_car/listing_car.dart';
 import 'package:gaadibazaar/listing/listing_excavator/listing_excavator.dart';
@@ -34,8 +35,8 @@ class PageViews extends StatelessWidget {
   Widget build(BuildContext context) {
     return PageView(
       children: [
+        Filter(),
         PostApi(),
-
         Apitwo(),
          ApiThree(),
          PreLogin(),

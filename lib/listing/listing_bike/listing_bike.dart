@@ -11,12 +11,8 @@ class ListingBike extends StatefulWidget {
 }
 
 class _ListingBikeState extends State<ListingBike> {
-
-
   File _image;
   final picker = ImagePicker();
-
-
   var tick1= false;
   var tick2= false;
   var tick3= false;
@@ -57,7 +53,6 @@ class _ListingBikeState extends State<ListingBike> {
             child: Column(
               children: [
                 TextFormList(
-                  controller: "dd",
                   title: "Conditions",
                   itemList: ["New", "Old"],
                 ),
